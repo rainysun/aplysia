@@ -6,6 +6,7 @@ margin:0px;
 body{
 background:#F8F8F0;
 font:12px/1.5 "Helvetica Neue",Helvetica,"Lucida Grande","Trebuchet MS",Verdana,sans-serif;
+min-width:700px;
 }
 #main{
 width:100%;
@@ -22,9 +23,39 @@ margin:0 auto;
 padding-bottom:15px;
 }
 a,a:hover{
-color:#6E3939;
+color:#007DCC;
 text-decoration:none;
 }
 .menu-list{
 border-top:1px solid #DDD;
+}
+.menu a{
+padding:5px 10px;
+border-radius:3px;
+}
+.menu a:hover{
+	background-color:#007DCC;
+	color:#FFF;
+}
+.menu{
+list-style:none;
+}
+.menu li{
+height:45px;
+line-height:45px;
+font-size:14px;
+float:left;
+margin-right:40px;
+}
+#container{
+width:90%;
+min-width:600px;
+margin:5px auto;
+height:400px;
+border:1px solid #DDD; 
+}
+.section{
+width:75%;
+height:400px;
+border-right:1px solid #DDD;
 }
