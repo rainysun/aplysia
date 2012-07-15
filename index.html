@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
+<script type='text/javascript' src='js/bootstrap.js'></script>
 <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css' />
 <link href='css/font-awesome.css' rel='stylesheet' type='text/css' />
 <link href='css/style.css' rel='stylesheet' type='text/css' />
@@ -18,29 +20,50 @@
 	<div class='menu-list'>
 		<div class='inner'>
 			<ul class='menu link'>
-				<li class='on'><a href=''>书签</a></li>
-				<li><a href=''>笔记</a></li>
-				<li><a href=''>文献</a></li>
+				<li><a href='#'>书签</a></li>
+				<li><a href='#'>笔记</a></li>
+				<li><a href='#'>文献</a></li>
+				<li><a href='#'>关于</a></li>
 			</ul>
 			<ul class='link msg'>
-				<li ><a href='#'><i class='icon-envelope-alt'></i>留言</a></li>
+				<li ><a href='#msg' data-toggle="modal"><i class='icon-envelope-alt'></i>留言</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 <div id='main'>
 	<div class='article'>
-		<div class='item'>
+		<div class='item bookmark'>
+			<div class='handler'></div>
+			<div class='item-nav'>
+				<a href='#'><i class='icon-bookmark-empty'></i> 书·签</a>
+			</div>
 		</div>
-		<div class='item'>
+		<div class='item notebook'>
+			<div class='handler'></div>
+			<div class='item-nav'>
+				<a href='#'><i class='icon-edit'></i> 笔·记</a>
+			</div>
 		</div>
-		<div class='item'>
+		<div class='item comment'>
+			<div class='handler'></div>
+			<div class='item-nav'>
+				<a href='#'><i class='icon-comments-alt'></i> 留·言</a>
+			</div>
 		</div>
-		<div class='item'>
+		<div class='item litreature'>
+			<div class='handler'></div>
+			<div class='item-nav'>
+				<a href='#'><i class='icon-file'></i> 文·献</a>
+			</div>
 		</div>
+
 	</div>
 	<div class='side'>
 		<div class='profile'>
+			<a href=''>
+			<img src='http://tp3.sinaimg.cn/1750856810/50/5603471022/1' />
+			</a>
 		</div>
 		<div class='tag-list'>
 		</div>
@@ -55,5 +78,31 @@
 	<span>UI support&nbsp;</span><i style="font-size: 18px;" class='icon-twitter'></i><a href='http://fortawesome.github.com/Font-Awesome/'>@Font Awesome</a><a href='http://twitter.github.com/bootstrap/index.html' >@Bootstrap</a></span>
 	</p>
 </div>
+<div class="modal hide fade" id="msg">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+		<h3>留言</h3>
+	</div>
+	<div class="modal-body">
+		<label for='msgArea'>您的留言：</label>
+		<textarea id='msgArea'></textarea>
+		<br/>
+		<br/>
+		<label for='userInput'>您的名字：</label>
+		<input class="span2" id="userInput" type="text">
+		<br/>
+		<label for='emailInput'>您的邮箱：</label>
+		<input class="span2" id="emailInput" type="text">
+  	</div>
+  	<div class="modal-footer">
+    	<a href="#" class="btn" data-dismiss="modal">取消</a>
+    	<a href="#" class="btn btn-primary">提交留言</a>
+  	</div>
+</div>
+<script>
+	$('#msg').modal({
+		'show':0;
+	});
+</script>
 </body>
 </html>
