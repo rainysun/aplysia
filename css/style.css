@@ -1,0 +1,30 @@
+/* style.css */
+*{
+padding:0px;
+margin:0px;
+}
+body{
+background:#F8F8F0;
+font:12px/1.5 "Helvetica Neue",Helvetica,"Lucida Grande","Trebuchet MS",Verdana,sans-serif;
+}
+#main{
+width:100%;
+}
+.header{
+padding-top:15px;
+background:#EBEBE4;
+height:90px;
+width:100%;
+}
+.inner{
+width:900px;
+margin:0 auto;
+padding-bottom:15px;
+}
+a,a:hover{
+color:#6E3939;
+text-decoration:none;
+}
+.menu-list{
+border-top:1px solid #DDD;
+}
