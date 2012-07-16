@@ -13,6 +13,13 @@ ul.menu li{margin-right:40px;display:inline;}
 .link a{padding:5px 10px;border-radius:3px;}
 .on a,.link a:hover{background-color:#007DCC;color:#FFF;}
 #main{width:900px;margin:0 auto;}
+#logo{float:left;}
+#count-down{
+float:right;
+width:300px;
+height:40px;
+border:1px solid #DDD;
+}
 .article{
 width:600px;
 float:left;
@@ -35,7 +42,7 @@ border:4px solid #FFF;
 border-radius:3px;
 box-shadow:0px 0px 5px #888;
 }
-.profile img:hover{
+img:hover{
 box-shadow:0px 0px 5px #007DCC;
 }
 .tag-list{
@@ -96,4 +103,48 @@ cursor:pointer;
 }
 .modal-body,.modal-header{
 color:#007DCC;
+}
+.book-cover{
+float:left;
+margin:5px 5px 5px 25px;
+}
+.book-cover img{
+border:4px solid #FFF;
+border-radius:3px;
+width:102px;
+height:145px;
+}
+.book-info{
+padding:5px;
+margin-top:5px;
+float:left;
+width:300px;
+height:145px;
+border-left:1px solid #DDD;
+border-right:1px solid #DDD;
+}
+.book-info ul{
+list-style:none;
+margin-left:5px;
+}
+.book-info ul li{
+color:teal;
+font-size:14px;
+font-weight:90%;
+margin-bottom:10px;
+}
+.book-title{
+font-size:20px;
+font-weight:100%;
+color:#007DCC;
+}
+.tags a{
+padding:2px;
+border-radius:3px;
+color:teal;
+border-bottom:1px solid #DDD;
+}
+.tags a:hover{
+background-color:teal;
+color:#FFF;
 }
